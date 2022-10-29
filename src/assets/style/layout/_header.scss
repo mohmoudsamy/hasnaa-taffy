@@ -1,0 +1,25 @@
+.app_header {
+  .app_video {
+    &-overlay {
+      background-color: rgba($fontColor, 0.4);
+      h1 {
+        background: rgb(136, 137, 255);
+        background: linear-gradient(
+          90deg,
+          rgba(136, 137, 255, 1) 0%,
+          rgba(27, 154, 170, 1) 50%,
+          rgba(250, 255, 235, 1) 100%
+        );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bold;
+        span {
+          font-family: "Lobster", cursive;
+        }
+      }
+      p {
+        color: $ivory;
+      }
+    }
+  }
+}

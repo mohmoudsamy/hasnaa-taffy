@@ -1,0 +1,36 @@
+.app_offer {
+  background-image: url("../images/offer.jpg");
+  background-color: $purple;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($fontColor, 0.3);
+  }
+  &-description {
+    h2 {
+      color: darken($darkCyan, 10%);
+    }
+    p {
+      color: $ivory;
+    }
+    button {
+      background-color: $ivory;
+      color: $darkCyan;
+      &:after,
+      &:before {
+        display: none;
+      }
+      &:hover {
+        background-color: $darkCyan;
+        color: $ivory;
+      }
+    }
+  }
+}

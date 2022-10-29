@@ -1,0 +1,23 @@
+.app_footer {
+  background-color: $purple;
+  &-info {
+    h3 {
+      font-size: 20px;
+      color: darken($fontColor, 20%);
+      span {
+        color: $ivory;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+  &-copyright {
+    .heart {
+      color: $rose;
+    }
+    &_name {
+      color: lighten($darkCyan, 30%);
+      font-family: "Lobster", cursive;
+    }
+  }
+}

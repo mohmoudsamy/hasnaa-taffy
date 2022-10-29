@@ -1,0 +1,39 @@
+// Desktop
+.sidebar {
+  background-color: $ivory;
+  color: $fontColor;
+  &_list {
+    &-item {
+      &_link {
+        &:hover {
+          color: $purple !important;
+        }
+        span {
+          &:first-child {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+  &_info {
+    color: $darkCyan;
+  }
+}
+
+// Uppernav
+.uppernav {
+  border-color: $darkCyan;
+  &_items {
+    li {
+      color: $purple;
+      &:hover {
+        color: $ivory;
+        color: $fontColor !important;
+      }
+    }
+  }
+  &.bg_scroll {
+    background-color: $ivory;
+  }
+}
