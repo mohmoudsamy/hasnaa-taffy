@@ -1,3 +1,13 @@
 .app_cart {
   background-color: $ivory;
+  &-btns {
+    a {
+      background-color: $darkCyan;
+      color: $ivory;
+      font-size: 17px;
+      &:first-child {
+        background-color: $purple;
+      }
+    }
+  }
 }

@@ -1,6 +1,14 @@
 .app_cart {
   background-color: #faffeb;
 }
+.app_cart-btns a {
+  background-color: #1b9aaa;
+  color: #faffeb;
+  font-size: 17px;
+}
+.app_cart-btns a:first-child {
+  background-color: #8889ff;
+}
 
 .sidebar {
   background-color: #faffeb;
@@ -29,6 +37,42 @@
 .uppernav.bg_scroll {
   background-color: #faffeb;
 }
+.uppernav .app_search-overlay {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(136, 137, 255, 0.4);
+}
+.uppernav .app_search-overlay_close-btn {
+  background-color: #8889ff;
+  color: #faffeb;
+}
+.uppernav .app_search-overlay_wrapper {
+  background-color: rgba(27, 154, 170, 0.7);
+}
+.uppernav .app_search-overlay_wrapper input {
+  background-color: transparent;
+  border-color: #faffeb;
+  caret-color: #faffeb;
+  color: #f7a5b8;
+}
+.uppernav .app_search-overlay_wrapper input:focus {
+  outline: none;
+}
+.uppernav .app_search-overlay_wrapper input::-moz-placeholder {
+  color: #faffeb;
+}
+.uppernav .app_search-overlay_wrapper input:-ms-input-placeholder {
+  color: #faffeb;
+}
+.uppernav .app_search-overlay_wrapper input::placeholder {
+  color: #faffeb;
+}
+.uppernav .app_search-overlay_wrapper span {
+  color: #faffeb;
+}
+.uppernav .app_search-overlay_wrapper span:hover {
+  color: #6b6b6b;
+}
 
 .app_offer {
   background-image: url("../images/offer.jpg");
@@ -52,17 +96,6 @@
 .app_offer-description p {
   color: #faffeb;
 }
-.app_offer-description button {
-  background-color: #faffeb;
-  color: #1b9aaa;
-}
-.app_offer-description button:after, .app_offer-description button:before {
-  display: none;
-}
-.app_offer-description button:hover {
-  background-color: #1b9aaa;
-  color: #faffeb;
-}
 
 .app_categories-category {
   background-color: #faffeb;
@@ -73,6 +106,32 @@
   color: #6b6b6b;
 }
 
+.app_about-info h4 {
+  color: #1b9aaa;
+}
+.app_about-info h2 {
+  color: #ef476f;
+}
+.app_about-info p {
+  color: #6b6b6b;
+}
+.app_about-info_statistics-box {
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(107, 107, 107, 0.1);
+}
+.app_about-info_statistics-box_icon {
+  color: #1b9aaa;
+}
+.app_about-info_statistics-box_count {
+  color: #8889ff;
+}
+.app_about-info_statistics-box_text {
+  color: #6b6b6b;
+}
+
+.app_services-img_overlay {
+  background-color: rgba(136, 137, 255, 0.3);
+}
 .app_services-service_box {
   background-color: #8889ff;
   box-shadow: 0px 20px 20px rgba(107, 107, 107, 0.3);
@@ -165,6 +224,16 @@
   background-color: rgba(136, 137, 255, 0.4);
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #1b9aaa;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -207,6 +276,18 @@ img::selection {
 }
 .btn:hover:before, .btn:hover:after {
   width: 100%;
+}
+
+.main_btn {
+  background-color: #faffeb;
+  color: #1b9aaa;
+}
+.main_btn:after, .main_btn:before {
+  display: none;
+}
+.main_btn:hover {
+  background-color: #1b9aaa;
+  color: #faffeb;
 }
 
 .cart_btn {

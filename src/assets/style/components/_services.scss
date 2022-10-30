@@ -1,5 +1,8 @@
 .app_services {
   &-img {
+    &_overlay {
+      background-color: rgba($purple, 0.3);
+    }
   }
   &-service {
     &_box {

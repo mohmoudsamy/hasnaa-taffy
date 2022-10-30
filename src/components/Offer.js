@@ -10,7 +10,7 @@ const Offer = () => {
             Ullamco aute ex incididunt sit consequat non sunt est amet dolor
             incididunt.
           </p>
-          <button className="mt-3 btn rounded">Check Menu</button>
+          <button className="mt-3 btn rounded main_btn">Check Menu</button>
         </div>
       </div>
     </div>

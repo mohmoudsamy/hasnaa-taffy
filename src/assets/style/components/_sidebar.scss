@@ -36,4 +36,36 @@
   &.bg_scroll {
     background-color: $ivory;
   }
+
+  .app_search {
+    &-overlay {
+      backdrop-filter: blur(5px);
+      background-color: rgba($purple, 0.4);
+      &_close-btn {
+        background-color: $purple;
+        color: $ivory;
+      }
+      &_wrapper {
+        background-color: rgba($darkCyan, 0.7);
+        input {
+          background-color: transparent;
+          border-color: $ivory;
+          caret-color: $ivory;
+          color: lighten($rose, 20%);
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: $ivory;
+          }
+        }
+        span {
+          color: $ivory;
+          &:hover {
+            color: $fontColor;
+          }
+        }
+      }
+    }
+  }
 }

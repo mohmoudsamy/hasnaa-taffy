@@ -20,17 +20,5 @@
     p {
       color: $ivory;
     }
-    button {
-      background-color: $ivory;
-      color: $darkCyan;
-      &:after,
-      &:before {
-        display: none;
-      }
-      &:hover {
-        background-color: $darkCyan;
-        color: $ivory;
-      }
-    }
   }
 }

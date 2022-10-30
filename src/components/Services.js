@@ -35,7 +35,10 @@ const Services = () => {
       <div className="container px-[1rem] md:px-[2rem] lg:px-[6.5rem]">
         <Heading title={"Our Services"} />
         <div className="grid grid-rows-2 grid-cols-1 xl:grid-rows-1 xl:grid-cols-5 xl:gap-x-10 gap-y-10 mt-10">
-          <div className="app_services-img col-span-2 lg:col-span-3">
+          <div className="app_services-img col-span-2 lg:col-span-3 relative">
+            <div className="app_services-img_overlay absolute rounded w-full h-full flex justify-center items-center opacity-0 hover:opacity-100 transition-opacity duration-500">
+              <button className="mt-3 btn rounded main_btn">Order Now</button>
+            </div>
             <img
               className="rounded-3xl h-[30rem] w-full"
               src={servicesImg}

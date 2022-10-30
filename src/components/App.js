@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "../layout/Header";
 import Offer from "./Offer";
 import Categories from "./Categories";
+import About from "./About";
 import Services from "./Services";
 import Deals from "./Deals";
 import Clients from "./Clients";
@@ -19,6 +20,7 @@ const App = () => {
       <Header dealCartInfo={dealInfo} />
       <Offer />
       <Categories />
+      <About />
       <Services />
       <Deals onAddToCartClick={setDealInfo} />
       <Clients />

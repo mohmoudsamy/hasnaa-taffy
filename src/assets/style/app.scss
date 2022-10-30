@@ -6,6 +6,7 @@
 @import "./components/sidebar";
 @import "./components/offer";
 @import "./components/categories";
+@import "./components/about";
 @import "./components/services";
 @import "./components/deals";
 @import "./components/clients";
@@ -18,6 +19,17 @@
 
 ::selection {
   background-color: rgba($purple, 0.4);
+}
+
+// Scroll Bar Style
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: $darkCyan;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $fontColor;
 }
 
 * {
@@ -34,6 +46,7 @@ img {
   }
 }
 
+// Header Button
 .btn {
   padding: 0.6rem 2rem;
   color: $ivory;
@@ -64,6 +77,20 @@ img {
     &:after {
       width: 100%;
     }
+  }
+}
+
+// Main Button
+.main_btn {
+  background-color: $ivory;
+  color: $darkCyan;
+  &:after,
+  &:before {
+    display: none;
+  }
+  &:hover {
+    background-color: $darkCyan;
+    color: $ivory;
   }
 }
 
